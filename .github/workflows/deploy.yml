@@ -25,4 +25,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . server14.hosting.reg.ru:/var/www/u1346564/data/www/chistyakovofficial.ru
+      - run: && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . 45.137.152.122:/var/www/chistyakovofficial.ru/html/
